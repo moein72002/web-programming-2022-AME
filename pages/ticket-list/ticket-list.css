@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('fonts/Yekan.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Yekan' !important;
+}
+
+:root {
+    --orange: #F79F1F;
+    --text-color-1: #444;
+    --text-color-2: #666;
+    --bg-color-1: #fff;
+    --bg-color-2: #eee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
 .inputBox {
     padding: 8px 4px;
     width: 300px;
@@ -10,4 +30,100 @@
     transition-duration: 200ms;
     margin-bottom: 8px;
     border-left-width: 6px;
+}
+
+.ticket-container {
+    height: 250px;
+    margin: 0px auto;
+    width: 80%;
+    margin-bottom: 30px;
+
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 8px;
+    margin: 0.5rem 0px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 26pt;
+}
+
+.row {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: row-reverse;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: row-reverse;
+}
+
+.price {
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #290d1662;
+    height: 100%;
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.start-time-div h3 {
+    text-align: right;
+    padding-bottom: 8px;
+    margin: 0.5rem 0px;
+    font-size: 22pt;
+
+}
+
+.finish-time-div h3 {
+    text-align: left;
+    padding-bottom: 8px;
+    margin: 0.5rem 0px;
+    font-size: 22pt;
+}
+
+.depart-time-div {
+    width: 15%;
+    padding: 8px 8px;
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.image-box {
+    width: 20%;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.price-label {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.dark-mode {
+        background-color: #585656;
+        --bg-color-1: #333;
+        --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .4);
+    }
 }

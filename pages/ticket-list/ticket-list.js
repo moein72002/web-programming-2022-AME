@@ -168,20 +168,37 @@ var allTickets = [
 
 
 const html =
-`        <div class="inputBox">
-<span>نام :</span>
-<input type="text" placeholder="نام">
-</div>
-
-<div class="inputBox">
-<span>نام خانوادگی :</span>
-<input type="text" placeholder="نام خانوادگی">
-</div>
-
-<div class="inputBox">
-<span>شماره پاسپورت :</span>
-<input type="text" placeholder="شماره پاسپورت">
-</div>`
+    `<div class="ticket-container">
+        <div class="row">
+            <a class="price">
+                <h1 class="price-label">
+                    اکونومی<br> 500.000 تومان
+                </h1>
+            </a>
+            <a class="price">
+                <h1 class="price-label">
+                    بیزینس<br> 1.000.000 تومان
+                </h1>
+            </a>
+            <a class="price">
+                <h1 class="price-label"">
+                    first class<br> 3.000.000 تومان
+                </h1>
+            </a>
+            <div class="finish-time-div">
+                <h3>20:30</h3>
+                <h3>مشهد</h3>
+            </div>
+            <div class="image-box">
+                <h3>مدت زمان پرواز: 1 ساعت</h3>
+                <img src="../../images/airplane-line-light.png" style=" max-width:100%;" />
+            </div>
+            <div class="start-time-div">
+                <h3>16:30</h3>
+                <h3>همدان</h3>
+            </div>
+        </div>
+    </div>`
 for (let index = 0; index < 20; index++) {
     document.getElementById("amir").innerHTML = document.getElementById("amir").innerHTML + html;
 }
