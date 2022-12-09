@@ -1,0 +1,13 @@
+.inputBox {
+    padding: 8px 4px;
+    width: 300px;
+    border-style: solid;
+    border-color: #c7c7c7;
+    border-width: 2px;
+    background-color: #f6f5f5;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 200ms;
+    margin-bottom: 8px;
+    border-left-width: 6px;
+}
