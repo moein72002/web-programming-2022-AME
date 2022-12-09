@@ -22,7 +22,7 @@ body {
 }
 
 .card-title {
-    border-bottom: 3px solid #BB2649;
+    border-bottom: 3px solid #b80d0d;
     text-align: center;
     padding-bottom: 8px;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .login-button {
-    background-color: #BB2649;
+    background-color: #c21616;
     border-radius: 4px;
     font-size: 24px;
     padding: 8px 16px;
@@ -81,7 +81,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #BB2649;
+    background-color: #bf3449;
 }
 
 .field-title {
@@ -91,14 +91,14 @@ body {
 }
 
 .divider {
-    border-top: 2px solid #BB2649;
+    border-top: 2px solid rgb(255, 67, 67);
     border-radius: 5px;
     width: 100%;
 }
 
 @font-face {
     font-family: 'Yekan';
-    src: url('fonts/Yekan.ttf');
+    src: url('../../fonts/Yekan.ttf');
     font-weight: normal;
     font-style: normal;
 }
