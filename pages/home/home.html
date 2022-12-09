@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هواپیمایی هدف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="../../images/logo.png">
+    <meta charset="UTF-8">
+
+</head>
+
+<body dir="rtl" class="dark-mode">
+    <header class="header">
+
+        <a class="logo"> <img src="../../images/logo.png"> هواپیمایی هدف </a>
+
+        <div class="icons">
+            <div id="login-btn">ورود</div>
+            <div id="register-btn">ثبت نام</div>
+            <div id="profile-btn">پنل کاربری</div>
+        </div>
+
+    </header>
+
+    <section class="home" id="home">
+        <div data-aos="fade-down">
+            <img class="header-image" src="../../images/header-image3.png" alt="">
+        </div>
+    </section>
+
+    <section class="form-container" data-aos="zoom-in">
+
+        <form autocomplete="off">
+            <div class="inputBox autocomplete">
+                <span>نام فرودگاه مبدا</span>
+                <input id="origin-airport" type="text" placeholder="فرودگاه مبدا">
+            </div>
+
+            <div class="inputBox autocomplete">
+                <span>نام فرودگاه مقصد</span>
+                <input id="destination-airport" type="text" placeholder="فرودگاه مقصد">
+            </div>
+
+            <div class="inputBox">
+                <span>تاریخ رفت</span>
+                <input id="depart-date" type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>تاریخ برگشت</span>
+                <input id="return-date" type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>تعداد مسافران</span>
+                <div>
+                    <button class="inc-dcr-psg-btn" id="inc-psg-btn">+</button>
+                    <input class="psg-input" id="psg-input" value="1"></input>
+                    <button class="inc-dcr-psg-btn" id="dcr-psg-btn">-</button>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn" id="search-ticket-btn">جستجوی بلیط</button>
+
+        </form>
+
+    </section>
+
+    <!-- filter form section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">بلیط های پیشنهادی</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/shiraz-tomb-of-hafez.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - شیراز </h3>
+                </div>
+                <div class="content">
+                    <div class="price">1000000 تومان<span class="price-span">2000000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/mashhad.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - مشهد </h3>
+                </div>
+                <div class="content">
+                    <div class="price">1500000 تومان<span class="price-span">2500000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/best-hotel-in-kish.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - کیش </h3>
+                </div>
+                <div class="content">
+                    <div class="price">2000000 تومان<span class="price-span">3000000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/hamedan-tomb-of-buali.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - همدان</h3>
+                </div>
+                <div class="content">
+                    <div class="price">800000 تومان<span class="price-span">1500000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/yazd.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - یزد </h3>
+                </div>
+                <div class="content">
+                    <div class="price">900000 تومان<span class="price-span">1600000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="../../images/kerman.png" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>تهران - کرمان </h3>
+                </div>
+                <div class="content">
+                    <div class="price">1200000 تومان<span class="price-span">1800000 تومان</span> </div>
+                    <a href="#" class="btn"> رزرو بلیط</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            امیر محمد - معین - عرفان
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="home.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 400,
+            delay: 200
+        });
+
+    </script>
+
+</body>
+
+</html>
