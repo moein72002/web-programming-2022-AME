@@ -143,7 +143,6 @@ autocomplete(destinationAirport, airports);
 
 searchTicketBtn.addEventListener("click", function () {
     airplaneTicketSearch = {
-        ticketId: uuid.v4(),
         userId: "",
         originAirportName: originAirport.value,
         destinationAirportName: destinationAirport.value,

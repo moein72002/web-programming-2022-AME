@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Yekan';
-    src: url('../../fonts/Yekan.ttf');
+    src: url('fonts/Yekan.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -215,6 +215,11 @@ section {
     color: var(--text-color-1);
     cursor: pointer;
     text-align: center;
+}
+
+.inc-dcr-psg-btn:hover {
+    color: #fff;
+    background: var(--orange);
 }
 
 .psg-number {
