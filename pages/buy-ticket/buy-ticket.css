@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+:root{
+    --orange:#F79F1F;
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:var(--bg-color-2);
+}
+
+body.active{
+    --text-color-1:#fff;
+    --text-color-2:#eee;
+    --bg-color-1:#333;
+    --bg-color-2:#222;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.4);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:var(--orange);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:var(--orange);
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem 7%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:var(--text-color-1);
+}
+
+.logo-img{
+    width: 30px;
+}
+
+.header .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .icons div{
+    height:4.5rem;
+    width:10rem;
+    line-height:4.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    margin-left: .5rem;
+    background:var(--bg-color-2);
+    color:var(--text-color-1);
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    color:#fff;
+    background:var(--orange);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 7rem;
+}
+
+.home .content{
+    flex:1 1 45rem;
+}
+
+.form-container form{
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items: center;
+}
+
+.form-container form .inputBox{
+    flex:1 1 23rem;
+}
+
+.form-container form .inputBox span{
+    font-size: 1.7rem;
+    color:var(--text-color-2);
+}
+
+.form-container form .inputBox input{
+    font-size: 1.5rem;
+    color:var(--text-color-1);
+    background:var(--bg-color-2);
+    border-radius: .5rem;
+    margin:.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding:1rem;
+}
+
+.form-container form .btn{
+    flex:1 1 23rem;
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+
+.ticket-time-discription{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.ticket-discription{
+    display: flex;
+    justify-content: right;
+}
+
+.ticket-origin-destination{
+    font-size: 30px;
+}
+
+.indexNumber{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
