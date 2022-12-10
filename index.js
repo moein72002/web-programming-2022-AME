@@ -34,7 +34,7 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-var airports = ["همدان", "یزد", "کیش", "بین المللی امام خمینی(تهران)", "بین المللی مهرآباد(تهران)", "مشهد", "کرمان"];
+var airports = ["همدان", "یزد", "کیش", "امام خمینی(تهران)", "مهرآباد(تهران)", "مشهد", "کرمان"];
 
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
@@ -134,22 +134,26 @@ function autocomplete(inp, arr) {
 }
 originAirport = document.getElementById("origin-airport");
 destinationAirport = document.getElementById("destination-airport");
-departTime = document.getElementById("depart-time");
-returnTime = document.getElementById("return-time");
+startDate = document.getElementById("depart-date");
+finishDate = document.getElementById("return-date");
 searchTicketBtn = document.getElementById("search-ticket-btn");
 
 autocomplete(originAirport, airports);
 autocomplete(destinationAirport, airports);
 
-searchTicketBtn.addEventListener("click", function () {
+searchTicketBtn.addEventListener("click", function (e) {
+    e.preventDefault();
     airplaneTicketSearch = {
         userId: "",
         originAirportName: originAirport.value,
         destinationAirportName: destinationAirport.value,
-        departTime: departTime.value,
-        returnTime: returnTime.value
+        startDate: startDate.value,
+        finishDate: finishDate.value,
+        psgNumber: psgNumber.value
     }
 
-    sessionStorage.setItem(ticketId, airplaneTicketSearch);
+    sessionStorage.setItem("ticketSearch", JSON.stringify(airplaneTicketSearch));
+
+    window.location.href = 'pages/ticket-list/ticket-list.html';
 })
 

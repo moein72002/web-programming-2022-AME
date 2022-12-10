@@ -20,9 +20,9 @@
         <a class="logo"> <img src="images/logo.png"> هواپیمایی هدف </a>
 
         <div class="icons">
-            <div id="login-btn">ورود</div>
-            <div id="register-btn">ثبت نام</div>
-            <div id="profile-btn">پنل کاربری</div>
+            <div id="login-btn" onclick="location.href='../login/login.html'">ورود</div>
+            <div id="register-btn" onclick="location.href='../register/register.html'" >ثبت نام</div>
+            <div id="profile-btn" onclick="location.href='../login/login.html'">پنل کاربری</div>
         </div>
 
     </header>
@@ -38,17 +38,17 @@
         <form autocomplete="off">
             <div class="inputBox autocomplete">
                 <span>نام فرودگاه مبدا</span>
-                <input id="origin-airport" type="text" placeholder="فرودگاه مبدا">
+                <input required="true" id="origin-airport" type="text" placeholder="فرودگاه مبدا">
             </div>
 
             <div class="inputBox autocomplete">
                 <span>نام فرودگاه مقصد</span>
-                <input id="destination-airport" type="text" placeholder="فرودگاه مقصد">
+                <input required="true" id="destination-airport" type="text" placeholder="فرودگاه مقصد">
             </div>
 
             <div class="inputBox">
                 <span>تاریخ رفت</span>
-                <input id="depart-date" type="date">
+                <input required="true" id="depart-date" type="date">
             </div>
 
             <div class="inputBox">
@@ -60,7 +60,7 @@
                 <span>تعداد مسافران</span>
                 <div>
                     <button class="inc-dcr-psg-btn" id="inc-psg-btn"> + </button>
-                    <input class="psg-input" id="psg-input" value="1"></input>
+                    <input required="true" class="psg-input" id="psg-input" value="1"></input>
                     <button class="inc-dcr-psg-btn" id="dcr-psg-btn"> - </button>
                 </div>
 
@@ -165,7 +165,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js"></script>
 
     <script>
