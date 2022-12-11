@@ -16,7 +16,7 @@
         <div class="row">
            <div class="col-sm-12">
                <div class="login-form">
-               
+                   <div class="logo-img"> <img src="../../images/logo.png" class="logo-img" ></div>
                 <h2 class="card-title">ایجاد حساب کاربری</h2>
                </div>
            </div>
@@ -27,7 +27,7 @@
                     <div>
                         <p class="field-title">نام</p>
                         <label>
-                            <input class="text-input" type="text" placeholder="نام خود را وارد کنید" />
+                            <input class="text-input" type="text" id="name-input" placeholder="نام خود را وارد کنید" />
                         </label>
                     </div>
             </div>
@@ -35,38 +35,38 @@
                     <div class="col-sm-6">
                         <p class="field-title">نام خانوادگی</p>
                         <label>
-                            <input class="text-input" type="text" placeholder="نام خانوادگی خود را وارد کنید" />
+                            <input class="text-input" id="lastname-input" type="text" placeholder="نام خانوادگی خود را وارد کنید" />
                         </label>
                     </div>
                     <div class="col-sm-6">
                         <p class="field-title">شماره پاسپورت</p>
                         <label>
-                            <input class="text-input" type="tel" placeholder="       شماره پاسپورت خود را وارد کنید" />
+                            <input class="text-input" id="passport-input" type="tel" placeholder="       شماره پاسپورت خود را وارد کنید" />
                         </label>
                     </div>
                     <div class="col-sm-6">
                         <p class="field-title">ایمیل</p>
                         <label>
-                            <input class="text-input" type="email" placeholder="                     ایمیل خود را وارد کنید" />
+                            <input class="text-input" id="email-input" type="email" placeholder="                     ایمیل خود را وارد کنید" />
                         </label>
                     </div>
                     <div class="col-sm-6">
                         <p class="field-title">رمز عبور</p>
                         <label>
-                            <input class="text-input" type="password" placeholder="رمز عبور خود را وارد کنید" />
+                            <input class="text-input" id="password-input" type="password" placeholder="رمز عبور خود را وارد کنید" />
                         </label>
                     </div>
                     <div class="col-sm-6">
                         <p class="field-title">تکرار رمز عبور </p>
                         <label>
-                            <input class="text-input" type="password" placeholder="رمز عبور خود را تکرار کنید" />
+                            <input class="text-input" id="password-repeat-input" type="password" placeholder="رمز عبور خود را تکرار کنید" />
                         </label>
                     </div>
                     <br/>
                 </div>
                 <div class="col-sm-12">
                 
-                <button class="login-button" onclick="location.href='../home/home.html'">
+                <button class="login-button" id="creat account">
                     ایجاد حساب
                 </button>
                 <a href="../login/login.html" style="color: gray;">

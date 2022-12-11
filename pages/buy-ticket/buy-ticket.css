@@ -84,9 +84,7 @@ section{
     color:var(--text-color-1);
 }
 
-.logo-img{
-    width: 30px;
-}
+
 
 .header .icons {
     display: flex;
