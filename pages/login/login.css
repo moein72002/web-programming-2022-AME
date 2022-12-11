@@ -191,7 +191,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #fdfdfd;
+    background-color: #fbc26c;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -252,5 +252,6 @@ body {
         --bg-color-1: #333;
         --bg-color-2: #222;
         --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .4);
+        background-color: #5d4c4c;
     }
 }
