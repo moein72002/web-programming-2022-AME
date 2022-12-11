@@ -11,10 +11,52 @@
 </head>
 
 <body dir="rtl" class="dark-mode">
+
+    
+    <section class="form-container" data-aos="zoom-in">
+
+        <form autocomplete="off">
+            <div class="inputBox autocomplete">
+                <span>نام فرودگاه مبدا</span>
+                <input required="true" id="origin-airport" type="text" placeholder="فرودگاه مبدا">
+            </div>
+
+            <div class="inputBox autocomplete">
+                <span>نام فرودگاه مقصد</span>
+                <input required="true" id="destination-airport" type="text" placeholder="فرودگاه مقصد">
+            </div>
+
+            <div class="inputBox">
+                <span>تاریخ رفت</span>
+                <input required="true" id="depart-date" type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>تاریخ برگشت</span>
+                <input id="return-date" type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>تعداد مسافران</span>
+                <div>
+                    <button class="inc-dcr-psg-btn" id="inc-psg-btn"> + </button>
+                    <input required="true" class="psg-input" id="psg-input" value="1"></input>
+                    <button class="inc-dcr-psg-btn" id="dcr-psg-btn"> - </button>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn" id="search-ticket-btn">جستجوی بلیط</button>
+
+        </form>
+
+    </section>
+
     <h2 class="title">لیست بلیط های یافت شده</h2>
     <div id="amir">
     </div>
     <script src="ticket-list.js"></script>
+    <script src="../../index.js"></script>
 </body>
 
 </html>
